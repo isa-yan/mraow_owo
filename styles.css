@@ -10,29 +10,27 @@ body{
 
 }
 
-#ears:hover{
-    transform:rotateY('45');
-    color:blue;
-}
-
-#eyes:hover{
-    color:red; 
-}
-
-#mouth:hover{
-    color:aqua;
-}
-
 .kitty{
     display:flex;
     flex-direction: column;
-    align-content:center;
-    gap:0px;
-}
-
-.kitty{
+    align-items:center;
     text-align:center;
     font-size:64px;
-
+    white-space:preserve;
 }
+
+.preserve-space{
+    white-space:preserve;
+}
+
+#head, #torso, #arms, #bottom, #feet{
+    white-space:collapse;
+}
+
+
+.kitty p{
+    padding:0%;
+    margin:0%;
+}
+
 
