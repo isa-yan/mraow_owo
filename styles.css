@@ -71,6 +71,30 @@ body{
 
 @keyframes jump{
     1%{transform:translateY(0px)}
-    50%{transform:translateY(-50px)}
+    50%{transform:translateY(-67px)}
     100%{transform:translateY(0px)}
+}
+
+.purr{
+    animation:purr alternate-reverse 2s;
+}
+
+@keyframes purr{
+
+}
+
+.cray{
+    animation:cray alternate-reverse 2s;
+}
+
+@keyframes cray{
+    
+}
+
+.meow{
+    animation:meow alternate-reverse 2s;
+}
+
+@keyframes meow{
+    
 }

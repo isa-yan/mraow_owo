@@ -24,12 +24,16 @@ var kitty=document.getElementById('kitty')
 const buttons=document.querySelectorAll('.buttons')
 
 
-jump.addEventListener('click',()=>{
-    kitty.classList.add('jump')
+function addeventsstuff(animation){ 
+    for(let i=0;i<buttons.length;i++){
+        buttons[i].addEventListener('click',()=>{
+            kitty.classList.add(toString(buttons[i]))
 
-})
+        })
 
-jump.addEventListener('animationend',()=>{
-    kitty.classList.remove('jump')
+        kitty.addEventListener('animationend',()=>{
+            kitty.classList.remove(buttons[i])
 
-})
+        })
+    }
+}
