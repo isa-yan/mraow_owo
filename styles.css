@@ -64,3 +64,13 @@ body{
     padding:20px;
 
 }
+
+.jump{
+    animation:jump ease-in-out 1s;
+}
+
+@keyframes jump{
+    1%{transform:translateY(0px)}
+    50%{transform:translateY(-50px)}
+    100%{transform:translateY(0px)}
+}
