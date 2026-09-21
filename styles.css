@@ -84,17 +84,26 @@ body{
 }
 
 .cray{
-    animation:cray alternate-reverse 2s;
+    animation:cray ease-in 2s;
 }
 
 @keyframes cray{
-    
+    from{transform:rotate(0deg) translateX(350px) translateY(205px)}
+    to{transform:rotate(360deg)}
 }
 
 .meow{
-    animation:meow alternate-reverse 2s;
+    animation:meow ease-out 2s;
 }
 
 @keyframes meow{
+    
+}
+
+.dance{
+    animation:dance alternate-reverse 2s;
+}
+
+@keyframes dance{
     
 }

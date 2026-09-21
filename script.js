@@ -24,16 +24,18 @@ var kitty=document.getElementById('kitty')
 const buttons=document.querySelectorAll('.buttons')
 
 
-function addeventsstuff(animation){ 
+function addeventsstuff(){ 
     for(let i=0;i<buttons.length;i++){
         buttons[i].addEventListener('click',()=>{
-            kitty.classList.add(toString(buttons[i]))
+            kitty.classList.add(buttons[i].id)
 
         })
 
-        kitty.addEventListener('animationend',()=>{
-            kitty.classList.remove(buttons[i])
+        kitty.addEventListener('animationend',(event)=>{
+            kitty.classList.remove(event.animationName)
 
         })
     }
 }
+
+addeventsstuff()
